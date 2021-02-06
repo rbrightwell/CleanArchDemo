@@ -1,0 +1,6 @@
+
+insert into Courses (Name, Description, ImageUrl)
+  values
+  ('Physics', 'Intro to Physics', '/images/blowingrock.jpg'),
+  ('Chemistry', 'Intro to Chemistry', '/images/farsidedesertvultures.jpg'),
+  ('Mathematics', 'Intro to Mathematics', '/images/groovy2.jpg')

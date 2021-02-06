@@ -41,7 +41,7 @@ namespace CleanArch.Mvc
                 options.UseSqlServer(
                     Configuration.GetConnectionString("UniversityDBConnection")));
 
-            RegisterServices(services);
+            services.RegisterServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -75,9 +75,9 @@ namespace CleanArch.Mvc
             });
         }
 
-        private static void RegisterServices(IServiceCollection services)
-        {
-            DependancyContainer.RegisterServices(services);
-        }
+        //private static void RegisterServices(IServiceCollection services)
+        //{
+        //    DependancyContainer.RegisterServices(services);
+        //}
     }
 }
